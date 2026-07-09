@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Davis Keller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Davis Keller</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h2>Workflow automation, data, and real-world tinkering.</h2>
+                <p>
+                    I build practical systems—Excel pipelines, Python scripts, and hardware experiments—
+                    that actually make life easier.
+                </p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>
+                    This site is a living notebook of things I build: personal finance automation,
+                    Excel macro orchestration, Python integrations, and electronics experiments.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Expense Categorizer</h3>
+                        <p>
+                            Excel + Python + machine learning to classify merchants and automate budgeting.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Schwab Data Pipeline</h3>
+                        <p>
+                            Automated pull of investment data into Excel with robust token handling.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Arduino Experiments</h3>
+                        <p>
+                            IR remote decoding, sensor integration, and microcontroller tinkering.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>
+                    You can reach me via GitHub or email. This section can later link to actual profiles.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Davis Keller. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
